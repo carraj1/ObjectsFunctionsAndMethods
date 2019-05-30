@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -53,7 +53,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #            Draws all the objects attached to this window.
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            When you create a window there needs to be a way to close it. 
+#            When you create a window there needs to be a way to close it.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
