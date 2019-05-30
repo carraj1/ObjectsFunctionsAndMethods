@@ -17,13 +17,13 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              bottom left corner
+#              TOP left corner
 #
 #        -- In what direction on the screen does the positive X-axis point?
 #              Right
 #
 #        -- In what direction on the screen does the positive Y-axis point?
-#              Up
+#              Down
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
 #           window = rg.RoseWindow()
@@ -31,7 +31,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
 #         Hint: After you type the ( in the line of code, if you wait a moment PyCharm will add the ) and has a popup.)
-#           100 by 100
+#           400 by 300
 #
 #     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
@@ -50,10 +50,10 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #                circle, center point, radius
 #
 #     f. What does a RoseWindow RENDER method do?
-#            Draws all the objects attached to this window.
+#            Draws all the objects attached to this window and allows the windown to stay open
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            When you create a window there needs to be a way to close it.
+#            When you create a window there needs to be a way to close it otherwise it would close automatically
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -134,7 +134,7 @@ def example3():
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
     circle.attach_to(window)
-    circle.
+
     # ------------------------------------------------------------------
     # Rectangle: needs two opposite corners.
     # ------------------------------------------------------------------
