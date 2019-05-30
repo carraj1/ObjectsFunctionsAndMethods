@@ -9,7 +9,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -82,7 +82,9 @@ def main():
     turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
 
     window.close_on_mouse_click()
 
@@ -171,22 +173,35 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    turt1 = rg.SimpleTurtle('turtle')
+    turt1.pen = rg.Pen('brown',5)
+    turt1.forward(250)
+    turt1.left(90)
+    turt1.forward(50)
+    turt1.backward(100)
+
+
+
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # Done: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
 
 
 def try_functions():
+    ####################################################################
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
-    ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
+
+    # Done: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -207,32 +222,45 @@ def try_methods_and_functions():
     Then makes the SimpleTurtle do the following (in the order listed):
 
       1. Go  backward  150 units.
-
       2. Change its speed to 1 (slowest).
          Draw 2 squares whose size (width and height) are 100,
          each "twisted" from the previous by 30 degrees.
-
       3. Change its speed to 5 (faster).
          Change its Pen's color to 'red'.
          Draw 10 squares whose size (width and height) are 50,
          each "twisted" from the previous by 15 degrees.
-
       4. Change its speed to 100 (about the fastest possible).
          Change its Pen's thickness to 35.
          Draw 8 squares whose size (width and height) are 300,
          each "twisted" from the previous by 60 degrees.
-
       5. Changes its Pen to be a NEW Pen whose color is 'black'
          and whose thickness is 3.
-
       6. Goes backward  200 units.
-
       7. Draw a CIRCLE whose radius is 30.
-
       8. Draw a SQUARE whose sides are each of length 50.
     """
+    turt2 = rg.SimpleTurtle('turtle')
+    turt2.pen = rg.Pen('blue', 5)
+    turt2.backward(150)
+    turt2.speed = 1
+    turt2.draw_square(100)
+    turt2.right(30)
+    turt2.draw_square(100)
+    turt2.speed = 5
+    turt2.pen = rg.Pen('red',5)
+    draw_many_squares(turt2,10,50,15)
+    turt2.speed = 100
+    turt2.pen = rg.Pen('blue',35)
+    draw_many_squares(turt2,8,300,60)
+    turt2.newpen = rg.Pen('black',3)
+    turt2.backward(200)
+    turt2.draw_circle(30)
+    turt2.draw_square(50)
+
+
+
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # Done: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
